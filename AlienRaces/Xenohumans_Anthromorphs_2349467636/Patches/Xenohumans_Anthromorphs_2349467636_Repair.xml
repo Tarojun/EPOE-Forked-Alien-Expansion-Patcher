@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName="ATK_StabilizerTail"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>BodyPartBionicBase</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/BodyDef[defName="ATK_Anthromorph"]/corePart/parts/li/def[text()="Tail"]</xpath>
+				<value>
+					<def>ATK_AnthromorphTail</def>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="ATK_InstallStabilizerTail"]/appliedOnFixedBodyParts</xpath>
+				<value>
+					<appliedOnFixedBodyParts>
+						<li>ATK_AnthromorphTail</li>
+					</appliedOnFixedBodyParts>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
