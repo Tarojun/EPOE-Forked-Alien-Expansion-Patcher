@@ -5,11 +5,14 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2305644684
 ElderThings_2305644684
 
 
-Patch types: Expansion, surgery expansion
+Patch types: Expansion, surgery expansion, repair
 
 Expansions:
 - Optimizers can be applied on Elder Thing Wings
 - Added advanced bionic wings (Elder Thing)
+
+Repair:
+- Removed set market price of ET_Item_BionicWing, so market value are aligned with material cost.
 
 Surgery expansion:
 - Jaw surgeries can now involve Elder Thing Maw
