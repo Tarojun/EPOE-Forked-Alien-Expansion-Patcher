@@ -10,4 +10,4 @@ Expansions:
 - Optimizers can be applied on hoof.
 
 Repair:
-- Removed market value tag from SteelThrumkinHorn and EnhancementThrumkinHorn.
+- Removed set market price of SteelThrumkinHorn and EnhancementThrumkinHorn, so market value are aligned with material cost.

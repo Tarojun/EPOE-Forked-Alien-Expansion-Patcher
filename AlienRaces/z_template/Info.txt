@@ -17,7 +17,7 @@ Surgery expansion:
 - ??? surgeries can now involve ???
 
 Repair:
-
+- Removed set market price of ?????, so market value are aligned with material cost.
 
 Vanilla repair:
 - "Tail" body part is a vanilla def used by animals, being overwritten by this race mod.

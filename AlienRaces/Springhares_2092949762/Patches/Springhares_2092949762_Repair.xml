@@ -41,4 +41,14 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BionicSpringhareTail"]/statBases/MarketValue</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ClothTail"]/statBases/MarketValue</xpath>
+	</Operation>
+
 </Patch>

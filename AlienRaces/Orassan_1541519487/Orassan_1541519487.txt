@@ -18,7 +18,7 @@ Expansions:
 - Added advanced bionic tail, using the generic advanced bionic tail item of this expansion mod.
 
 Repairs:
-- Removed the fixed market value of bionic orassan tail.
+- Removed the fixed market value of bionic orassan tail, so market value are aligned with material cost.
 
 Notice:
 The InstallBionicTail hediff defName is dangerously easy to be taken by something else, potentially cause overwrite issues.

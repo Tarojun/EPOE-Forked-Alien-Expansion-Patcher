@@ -17,3 +17,4 @@ Repair:
 - Corrected the race to use its own body def, therefore able to use their tails surgery.
 - Changed the addon body part graphics to target the tail, rather than the torso.
 - Corrected the label of the tail body part for the health tab.
+- Removed set market price of ClothTail and BionicSpringhareTail, so market value are aligned with material cost.
