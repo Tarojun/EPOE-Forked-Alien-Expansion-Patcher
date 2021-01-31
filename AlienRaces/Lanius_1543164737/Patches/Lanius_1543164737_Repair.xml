@@ -36,4 +36,16 @@
 		</match>
 	</Operation>
 
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RecipeDef[defName="LTF_InstallPatchedEye"]</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/HediffDef[defName="LTF_Lanius_PatchedEye_Hediff"]/descriptionHyperlinks/RecipeDef[text()="LTF_InstallPatchedEye"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
 </Patch>
