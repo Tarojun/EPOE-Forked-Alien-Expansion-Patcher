@@ -37,6 +37,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
 				<xpath>Defs/RecipeDef[defName="LTF_InstallPatchedEye"]</xpath>
