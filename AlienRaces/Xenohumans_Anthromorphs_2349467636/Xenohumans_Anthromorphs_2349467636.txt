@@ -5,16 +5,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2349467636
 Xenohumans_Anthromorphs_2349467636
 
 
-Patch types: Expansion, surgery expansion, repair, vanilla repair
+Patch types: Expansion, surgery expansion
 
 Expansions:
 - Added advanced stabilizer tail. No movement penalty, small improvement to dodge chance.
-- Able to restore cosmetic body part on ATK_AnthromorphTail.
-
-Repair:
-- Stabilizer tail parentName adjusted to "BodyPartBionicBase".
-
-Vanilla repair:
-- "Tail" body part is a vanilla def used by animals, being overwritten by this race mod.
-Added the vanilla version back by forced overwrite to repair it, as this mod is loaded after the race mods.
-- Added new ATK_AnthromorphTail, and now uses this body part in place of the "Tail" body part.
+- Able to restore cosmetic body part on ATK_Tail.

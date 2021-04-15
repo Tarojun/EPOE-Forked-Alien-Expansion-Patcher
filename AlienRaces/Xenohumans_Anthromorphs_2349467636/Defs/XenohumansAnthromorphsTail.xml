@@ -28,8 +28,10 @@
 		<description>A highly advanced combat-oriented tail replacement consisting of mechanical sections linked by servomotors. A simple suite of sensors and a microprocessor array embedded at the base allows it to accentuate the user's movements, allowing greater agility when performing sudden, vigorous motions. This improved model is lighter than the original model, that it no longer affects movement speed.</description>
 		<descriptionHyperlinks><RecipeDef>ATK_InstallAdvancedStabilizerTail</RecipeDef></descriptionHyperlinks>
 		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
 			<Plasteel>15</Plasteel>
-			<ComponentSpacer>6</ComponentSpacer>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
 			<Mass>5</Mass>
@@ -60,6 +62,14 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
 						<li>ComponentSpacer</li>
 					</thingDefs>
 				</filter>
@@ -69,6 +79,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>ATK_StabilizerTail</li>
+				<li>Plasteel</li>
 				<li>ComponentSpacer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -99,7 +110,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
-            <li>ATK_AnthromorphTail</li>
+            <li>ATK_Tail</li>
         </appliedOnFixedBodyParts>
         <addsHediff>ATK_AdvancedStabilizerTail</addsHediff>
     </RecipeDef>
