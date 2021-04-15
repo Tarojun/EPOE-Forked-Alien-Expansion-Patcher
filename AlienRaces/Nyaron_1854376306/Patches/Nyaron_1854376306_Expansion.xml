@@ -56,53 +56,115 @@
 					<value>EPIA_DeclutterAlienTail</value>
 				</li>
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/HediffDef[defName="BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/descriptionHyperlinks</xpath>
-					<match Class="PatchOperationReplace">
-						<xpath>Defs/HediffDef[defName="BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/descriptionHyperlinks</xpath>
-						<value>
-							<descriptionHyperlinks>
-								<ThingDef>EPIA_BionicTail</ThingDef>
-							</descriptionHyperlinks>
-						</value>
+					<xpath>Defs/HediffDef[defName="Nr_BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]</xpath>
+					<match Class="PatchOperationSequence">
+						<!-- This is for 1.2 version -->
+						<operations>
+							<li Class="PatchOperationConditional">
+								<xpath>Defs/HediffDef[defName="Nr_BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/descriptionHyperlinks</xpath>
+								<match Class="PatchOperationReplace">
+									<xpath>Defs/HediffDef[defName="Nr_BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/descriptionHyperlinks</xpath>
+									<value>
+										<descriptionHyperlinks>
+											<ThingDef>EPIA_BionicTail</ThingDef>
+										</descriptionHyperlinks>
+									</value>
+								</match>
+								<nomatch Class="PatchOperationAdd">
+									<xpath>Defs/HediffDef[defName="Nr_BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]</xpath>
+									<value>
+										<descriptionHyperlinks>
+											<ThingDef>EPIA_BionicTail</ThingDef>
+										</descriptionHyperlinks>
+									</value>
+								</nomatch>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/HediffDef[defName="Nr_BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/spawnThingOnRemoved</xpath>
+								<value>
+									<spawnThingOnRemoved>EPIA_BionicTail</spawnThingOnRemoved>
+								</value>
+							</li>
+							<li Class="PatchOperationConditional">
+								<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]/descriptionHyperlinks</xpath>
+								<match Class="PatchOperationReplace">
+									<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]/descriptionHyperlinks</xpath>
+									<value>
+										<descriptionHyperlinks>
+											<ThingDef>Nr_BioCatTail</ThingDef>
+											<ThingDef>EPIA_BionicTail</ThingDef>
+											<HediffDef>Nr_BionicTail</HediffDef>
+										</descriptionHyperlinks>
+									</value>
+								</match>
+								<nomatch Class="PatchOperationAdd">
+									<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]</xpath>
+									<value>
+										<descriptionHyperlinks>
+											<ThingDef>Nr_BioCatTail</ThingDef>
+											<ThingDef>EPIA_BionicTail</ThingDef>
+											<HediffDef>Nr_BionicTail</HediffDef>
+										</descriptionHyperlinks>
+									</value>
+								</nomatch>
+							</li>
+						</operations>
 					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/HediffDef[defName="BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]</xpath>
-						<value>
-							<descriptionHyperlinks>
-								<ThingDef>EPIA_BionicTail</ThingDef>
-							</descriptionHyperlinks>
-						</value>
+					<nomatch Class="PatchOperationSequence">
+						<!-- This is for 1.1 version -->
+						<operations>
+							<li Class="PatchOperationConditional">
+								<xpath>Defs/HediffDef[defName="BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/descriptionHyperlinks</xpath>
+								<match Class="PatchOperationReplace">
+									<xpath>Defs/HediffDef[defName="BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/descriptionHyperlinks</xpath>
+									<value>
+										<descriptionHyperlinks>
+											<ThingDef>EPIA_BionicTail</ThingDef>
+										</descriptionHyperlinks>
+									</value>
+								</match>
+								<nomatch Class="PatchOperationAdd">
+									<xpath>Defs/HediffDef[defName="BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]</xpath>
+									<value>
+										<descriptionHyperlinks>
+											<ThingDef>EPIA_BionicTail</ThingDef>
+										</descriptionHyperlinks>
+									</value>
+								</nomatch>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/HediffDef[defName="BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/spawnThingOnRemoved</xpath>
+								<value>
+									<spawnThingOnRemoved>EPIA_BionicTail</spawnThingOnRemoved>
+								</value>
+							</li>
+							<li Class="PatchOperationConditional">
+								<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]/descriptionHyperlinks</xpath>
+								<match Class="PatchOperationReplace">
+									<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]/descriptionHyperlinks</xpath>
+									<value>
+										<descriptionHyperlinks>
+											<ThingDef>Nr_BioCatTail</ThingDef>
+											<ThingDef>EPIA_BionicTail</ThingDef>
+											<HediffDef>BionicTail</HediffDef>
+										</descriptionHyperlinks>
+									</value>
+								</match>
+								<nomatch Class="PatchOperationAdd">
+									<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]</xpath>
+									<value>
+										<descriptionHyperlinks>
+											<ThingDef>Nr_BioCatTail</ThingDef>
+											<ThingDef>EPIA_BionicTail</ThingDef>
+											<HediffDef>BionicTail</HediffDef>
+										</descriptionHyperlinks>
+									</value>
+								</nomatch>
+							</li>
+						</operations>
 					</nomatch>
 				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/HediffDef[defName="BionicTail" and spawnThingOnRemoved="Nr_BioCatTail"]/spawnThingOnRemoved</xpath>
-					<value>
-						<spawnThingOnRemoved>EPIA_BionicTail</spawnThingOnRemoved>
-					</value>
-				</li>
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]/descriptionHyperlinks</xpath>
-					<match Class="PatchOperationReplace">
-						<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]/descriptionHyperlinks</xpath>
-						<value>
-							<descriptionHyperlinks>
-								<ThingDef>Nr_BioCatTail</ThingDef>
-								<ThingDef>EPIA_BionicTail</ThingDef>
-								<HediffDef>BionicTail</HediffDef>
-							</descriptionHyperlinks>
-						</value>
-					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/RecipeDef[defName="InstallBionicCatTail"]</xpath>
-						<value>
-							<descriptionHyperlinks>
-								<ThingDef>Nr_BioCatTail</ThingDef>
-								<ThingDef>EPIA_BionicTail</ThingDef>
-								<HediffDef>BionicTail</HediffDef>
-							</descriptionHyperlinks>
-						</value>
-					</nomatch>
-				</li>
+				
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="Nr_BioCatTail"]/thingSetMakerTags</xpath>
 					<match Class="PatchOperationRemove">
